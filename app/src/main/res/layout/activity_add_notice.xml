@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Notice">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Add Notice"
+        app:titleTextColor="@color/black"
+        android:background="#44A5DA"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic Name"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/filledTextFieldTopic"
+            >
+
+            <EditText
+                android:id="@+id/edittext_notice_topic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is this announcement about ?"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/filledTextField"
+            >
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/attachment_assignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Add Attachment"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginLeft="20dp"
+        app:cornerRadius="8dp"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@android:color/holo_green_dark"
+        app:strokeWidth="2dp"
+        android:drawableLeft="@drawable/ic_baseline_attach_file_24"
+        />
+
+    <Button
+        android:id="@+id/save_and_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save and Create"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/view_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Notice"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

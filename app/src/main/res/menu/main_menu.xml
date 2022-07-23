@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Item_home"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Home"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/Add_Course"
+        android:icon="@drawable/ic_baseline_add"
+        android:title="Add Course"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/View_Course"
+        android:icon="@drawable/ic_baseline_preview"
+        android:title="View Course"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/About"
+        android:icon="@drawable/ic_baseline_help"
+        android:title="About"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/Logout"
+        android:icon="@drawable/ic_baseline_help"
+        android:title="Logout"
+        android:checkable="true"
+        />
+
+</menu>

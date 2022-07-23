@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.application">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Application">
+        <activity
+            android:name=".View_single_Assignment_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Student_View_course"
+            android:exported="true" />
+        <activity android:name=".Profile_Activity" />
+        <activity
+            android:name=".Student_View_Notice_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Student_View_Quiz_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Student_View_Assignment_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Student_View_Course_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DashBoard_Activity" />
+        <activity android:name=".Registration_Activity" />
+        <activity android:name=".View_Notice" />
+        <activity android:name=".View_Quiz" />
+        <activity android:name=".Create_Quiz" />
+        <activity android:name=".View_Assignment_Activity" />
+        <activity android:name=".Summary" />
+        <activity android:name=".Add_Notice" />
+        <activity android:name=".Create_Assignment" />
+        <activity android:name=".Course_function" />
+        <activity android:name=".Add_Course1" />
+        <activity android:name=".View_PDF_activity" />
+        <activity android:name=".upload_PDF_notes" />
+        <activity android:name=".Add_Course_Module" />
+        <activity android:name=".View_Course" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
